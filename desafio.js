@@ -80,3 +80,99 @@ let resultado = mensagem + numero
  
 console.log(resultado);
 console.log(typeof resultado);
+
+
+// DESAFIO EXTRA
+
+console.log ('Boas vindas a calculadora de trocos!')
+
+let valorCompra = 17.50
+let valorPago = 20
+
+console.log ('Valor da compra: R$', valorCompra)
+console.log ('Valor recebido: R$ ', valorPago)
+
+
+let troco = valorPago - valorCompra
+
+console.log(`Voce deu R$ ${troco} de troco apos sua venda`)
+
+// DESAFIO 11
+
+let idadeKayke = 13
+const souMaiorDeIdade = 18
+
+console.log(idadeKayke >= souMaiorDeIdade);
+
+// DESAFIO 12
+
+let notaIngles = 3
+let notaEspanhol = 5
+let media = 7
+
+let notaFinal = notaIngles + notaEspanhol
+
+console.log (notaFinal >= media)
+
+// DESAFIO 13
+
+let valorArroz = 35.90
+let valorNoPix = 50
+let trocoFinal = valorNoPix - valorArroz
+
+console.log (`Voce recebeu ${trocoFinal.toFixed(2)} de troco`)
+
+// DESAFIO 14
+
+const senhaDigitada = "Batata123";
+const confirmacaoSenha = "Batata123";
+
+const senhasSaoIguais = senhaDigitada === confirmacaoSenha
+
+console.log ('As senhas coincidem?', senhasSaoIguais)
+
+// DESAFIO 15
+
+const totalAulas = 130
+const totalFaltas = 30
+
+const limiteFaltas = totalAulas * 0.25
+const ultrapassouLimite = totalFaltas > limiteFaltas;
+
+console.log('ultrapassou o limite de faltas?',totalFaltas > limiteFaltas)
+
+// DESAFIO 16
+
+const temLogin = true
+const temSenha = true
+
+console.log ('Ambas sao verdadeira?',temLogin && temSenha)
+
+// DESAFIO 17
+
+const disponivel = false
+console.log(!disponivel)
+
+// DESAFIO 18
+
+const n1 = 18
+const n2 = 18
+
+const resultadoFinal = (n1 % 2 === 0) && (n2 % 2 === 0) && (n1 === n2)
+
+console.log(resultadoFinal)
+
+// DESAFIO 19
+
+const valorBase = 120
+const porcentagem = 15
+
+const resultadoPorcentagem = valorBase * (porcentagem / 100);
+
+console.log(`${porcentagem}% de ${valorBase} é igual a ${resultadoPorcentagem}.`)
+
+//DESAFIO 20
+
+const resultadoOperacao = 2 + 3 * 5
+
+console.log(resultadoOperacao)
