@@ -330,5 +330,118 @@ console.log(i);
 
 } 
 
+//DESAFIO 32
+
+let soma = 0;
+
+for (let i = 1; i <= 100; i++) {
+  soma += i; // mesmo que: soma = soma + i
+}
+
+console.log("Soma de 1 a 100: " + soma);
 
 
+//DESAFIO 33
+
+let numero33 = 7;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(numero33 + " x " + i + " = " + (numero33 * i));
+}
+
+//DESAFIO 34
+
+let contagem = 10;
+
+while (contagem >= 0) {
+  console.log(contagem);
+  contagem--; // reduz 1 a cada volta
+}
+
+console.log("Contagem finalizada!");
+
+//DESAFIO 35
+
+let numeroDigitado;
+let quantidade = 0;
+let repeticoes = 0;
+
+do {
+  // simulação de entrada manual
+  if (repeticoes === 0) numeroDigitado = 5;
+  else if (repeticoes === 1) numeroDigitado = 10;
+  else numeroDigitado = 0;
+
+  if (numeroDigitado !== 0) quantidade++;
+  repeticoes++;
+
+} while (numeroDigitado !== 0);
+
+console.log("Total digitados: " + quantidade);
+
+//DESAFIO 36
+
+let numeroSecreto = 7;
+
+for (let tentativa = 1; tentativa <= 3; tentativa++) {
+  let numeroTentado;
+
+  if (tentativa === 1) numeroTentado = 3;
+  else if (tentativa === 2) numeroTentado = 5;
+  else numeroTentado = 7;
+
+  if (numeroTentado === numeroSecreto) {
+    console.log("Acertou!");
+  } else {
+    console.log("Tente novamente");
+  }
+}
+
+//DESAFIO 37
+
+let anoNascimento37 = 2000;
+let anoAtual37 = 2025;
+
+for (let ano = anoNascimento37; ano <= anoAtual37; ano++) {
+  console.log(
+    "Em " + ano + " você tinha " + (ano - anoNascimento37) + " anos."
+  );
+}
+
+//DESAFIO 38
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 === 0) {  // % = resto da divisão
+    console.log(i);
+  }
+}
+
+//DESAFIO 39
+
+let multiplosDe3 = 0;
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0) {
+    multiplosDe3++;  // contador
+  }
+}
+
+console.log("Divisíveis por 3: " + multiplosDe3);
+
+//DESAFIO 40
+
+let opcao40;
+let passo = 0;
+
+do {
+  // simulação das escolhas do usuário
+  if (passo === 0) opcao40 = 1;
+  else if (passo === 1) opcao40 = 2;
+  else opcao40 = 3;
+
+  if (opcao40 === 1) console.log("Ver saldo");
+  else if (opcao40 === 2) console.log("Fazer depósito");
+  else if (opcao40 === 3) console.log("Sair");
+
+  passo++;
+} while (opcao40 !== 3);

@@ -21,4 +21,4 @@ if (idade != null) {
     } else if (idade >= 0 && idade < 18) {
         console.log('Menor de idade')
     }
-}
+} 
