@@ -1,7 +1,7 @@
 // DESAFIO 1
 let nome = "Olá, Kayke ! Seja bem-vindo(a) ao curso de JavaScript!"
 
-console.log (nome)
+console.log(nome)
 
 // DESAFIO 2
 // 1. Criando as variáveis
@@ -17,12 +17,12 @@ console.log(`Você tem ${idade} anos.`)
 // DESAFIO 3
 let localizacao = 'EU estou em SP, Sao paulo, Brasil'
 
-console.log (localizacao)
+console.log(localizacao)
 
 // DESAFIO 4
 let temCarteira = true
 
-console.log (typeof temCarteira)
+console.log(typeof temCarteira)
 
 // DESAFIO 5
 let saldo = 0
@@ -31,7 +31,7 @@ let saque = 50
 
 saldo = saldo + deposito - saque;
 
-console.log (`Eu tenho ${saldo} na conta. `);
+console.log(`Eu tenho ${saldo} na conta. `);
 
 // DESAFIO 6
 let nota = 0
@@ -41,7 +41,7 @@ let notaCiencias = 3
 
 nota = notaMatematica + notaPortugues + notaCiencias;
 
-console.log (`Media final ${nota}`);
+console.log(`Media final ${nota}`);
 
 // DESAFIO 7
 let salario = 3000;
@@ -69,7 +69,7 @@ console.log(`O botão foi clicado ${cliques} vezes.`);
 
 // DESAFIO 9
 const pi = 3.14
-console.log (`Valor de pi e de ${pi}`)
+console.log(`Valor de pi e de ${pi}`)
 
 
 // DESAFIO 10
@@ -77,20 +77,20 @@ let mensagem = 'Voce tem o total de creditos de: '
 let numero = 32000
 
 let resultado = mensagem + numero
- 
+
 console.log(resultado);
 console.log(typeof resultado);
 
 
 // DESAFIO EXTRA
 
-console.log ('Boas vindas a calculadora de trocos!')
+console.log('Boas vindas a calculadora de trocos!')
 
 let valorCompra = 17.50
 let valorPago = 20
 
-console.log ('Valor da compra: R$', valorCompra)
-console.log ('Valor recebido: R$ ', valorPago)
+console.log('Valor da compra: R$', valorCompra)
+console.log('Valor recebido: R$ ', valorPago)
 
 
 let troco = valorPago - valorCompra
@@ -112,7 +112,7 @@ let media = 7
 
 let notaFinal = notaIngles + notaEspanhol
 
-console.log (notaFinal >= media)
+console.log(notaFinal >= media)
 
 // DESAFIO 13
 
@@ -120,7 +120,7 @@ let valorArroz = 35.90
 let valorNoPix = 50
 let trocoFinal = valorNoPix - valorArroz
 
-console.log (`Voce recebeu ${trocoFinal.toFixed(2)} de troco`)
+console.log(`Voce recebeu ${trocoFinal.toFixed(2)} de troco`)
 
 // DESAFIO 14
 
@@ -129,7 +129,7 @@ const confirmacaoSenha = "Batata123";
 
 const senhasSaoIguais = senhaDigitada === confirmacaoSenha
 
-console.log ('As senhas coincidem?', senhasSaoIguais)
+console.log('As senhas coincidem?', senhasSaoIguais)
 
 // DESAFIO 15
 
@@ -139,14 +139,14 @@ const totalFaltas = 30
 const limiteFaltas = totalAulas * 0.25
 const ultrapassouLimite = totalFaltas > limiteFaltas;
 
-console.log('ultrapassou o limite de faltas?',totalFaltas > limiteFaltas)
+console.log('ultrapassou o limite de faltas?', totalFaltas > limiteFaltas)
 
 // DESAFIO 16
 
 const temLogin = true
 const temSenha = true
 
-console.log ('Ambas sao verdadeira?',temLogin && temSenha)
+console.log('Ambas sao verdadeira?', temLogin && temSenha)
 
 // DESAFIO 17
 
@@ -176,3 +176,159 @@ console.log(`${porcentagem}% de ${valorBase} é igual a ${resultadoPorcentagem}.
 const resultadoOperacao = 2 + 3 * 5
 
 console.log(resultadoOperacao)
+
+
+//DESAFIO 21
+
+const idadeBebida = 19
+
+if (idadeBebida >= 18) {
+    console.log('Pode comprar bebida alcoólica')
+} else {
+    console.log('Venda proibida para menores de 18 anos')
+}
+
+//DESAFIO 22
+
+const horaAtual = 11
+
+switch (horaAtual) {
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+        console.log('Bom dia!')
+        break
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+        console.log('Bom Tarde!')
+        break
+    default:
+        console.log('Boa noite!')
+}
+
+//DESAFIO 23
+
+const verificacaoDeNumero = 0
+
+if (verificacaoDeNumero > 0) {
+    console.log('Este numero e positivo')
+}
+else if (verificacaoDeNumero < 0) {
+    console.log('Este numero e negativo')
+}
+else {
+    console.log('O numero e zero')
+}
+
+//DESAFIO 24
+
+const notaDeConceito = 7
+
+if (notaDeConceito >= 9 && notaDeConceito <= 10) {
+    console.log('Nota A')
+}
+else if (notaDeConceito >= 8) {
+    console.log('Nota B')
+}
+else if (notaDeConceito >= 6) {
+    console.log('Nota C')
+}
+else if (notaDeConceito >= 4) {
+    console.log('Nota D')
+}
+else console.log('Nota E')
+
+//DESAFIO 25
+
+const num = 2;
+
+// A lógica: O resto da divisão por 2 é igual a 0? 
+// Se sim (?), 'Par'. Se não (:), 'Ímpar'.
+
+const resposta = (num % 2 === 0) ? 'Par' : 'Ímpar';
+
+console.log(resposta); // Agora os nomes batem!
+
+//DESAFIO 26
+
+
+const opcao = 3
+
+switch (opcao) {
+    case 1:
+        console.log('cadastrar')
+        break
+    case 2:
+        console.log('listar')
+        break
+    case 3:
+        console.log('sair')
+        break
+    default:
+        console.log("Opção inválida! Escolha entre 1 e 3.")
+}
+
+//DESAFIO 27
+
+const emailValidacao = 'Kaykeallantorresdutra@gmail.com'
+
+if (emailValidacao === '') {
+    console.log('Preencha o campo e-mail')
+} else {
+    console.log('E-mail Valido')
+}
+
+//DESAFIO 28
+
+let senhaValidacao = '878'
+let senhaValida = true
+
+if (senhaValida) {
+    console.log('Senha valida')
+} else {
+    console.log('Senha muito curta')
+}
+
+//DESAFIO 29
+
+const saldoDisponivel = 120
+const custoDaCompra = 13
+
+if (saldoDisponivel >= custoDaCompra) {
+    console.log ('Compra aprovada')
+} else {
+    console.log ('Saldo insuficiente')
+}
+
+//DESAFIO 30
+
+const nomeFormulario = 'kaka'
+const emailFormulario = 'java@gmail.com'
+const idadeFormulario = 0
+
+const formularioValido = (nomeFormulario !== "" && emailFormulario !== "");
+
+if (formularioValido) {
+    console.log ('Formulario enviado com sucesso')
+} else {
+    console.log ('por favor, preencha todos os campos corretamente')
+}
+
+//DESAFIO 31
+
+for (let i = 1; i <= 10; i++) { 
+
+console.log(i); 
+
+} 
+
+
+
