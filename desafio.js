@@ -445,3 +445,405 @@ do {
 
   passo++;
 } while (opcao40 !== 3);
+
+// 41. Função de saudação 
+
+function saudacao() { 
+
+console.log("Olá! Seja bem-vindo(a)!"); 
+
+} 
+
+saudacao(); 
+
+ 
+
+// 42. Função com parâmetros 
+
+function apresentarPessoa(nome, idade) { 
+
+console.log("Olá, meu nome é " + nome + " e tenho " + idade + " anos."); 
+
+} 
+
+apresentarPessoa("Ana", 30); 
+
+ 
+
+// 43. Cálculo de IMC 
+
+function calcularIMC(peso, altura) {
+  let imc = peso / (altura * altura);
+  return imc;
+}
+
+let resultadoIMC = calcularIMC(70, 1.75);
+console.log("Seu IMC é: " + resultadoIMC);
+
+ 
+
+// 44. Verificar aprovação 
+
+function verificarAprovacao(nota) { 
+
+if (nota >= 7) { 
+
+console.log("Aprovado"); 
+
+} else { 
+
+console.log("Reprovado"); 
+
+} 
+
+} 
+
+verificarAprovacao(6); 
+
+ 
+
+// 45. Número par ou ímpar 
+
+function ehPar(numero) { 
+
+return numero % 2 === 0; 
+
+} 
+
+console.log("O número é par? " + ehPar(4)); 
+
+ 
+
+// 46. Função soma 
+
+function somar(a, b) { 
+
+return a + b; 
+
+} 
+
+console.log("Soma: " + somar(5, 10)); 
+
+ 
+
+// 47. Calculadora de troco 
+
+function calcularTroco(valorCompra, valorPago) {
+  let troco = valorPago - valorCompra;
+  return troco;
+}
+
+let resultadoTroco = calcularTroco(35.9, 50);
+console.log("Troco: R$ " + resultadoTroco);
+
+
+ 
+
+// 48. Arrow function 
+
+const somarArrow = (a, b) => a + b; 
+
+console.log("Soma (arrow): " + somarArrow(3, 7)); 
+
+ 
+
+// 49. Callback simples 
+
+function executarAcao(acao) { 
+
+acao(); 
+
+} 
+
+executarAcao(function() { 
+
+console.log("Executando ação!"); 
+
+}); 
+
+ 
+
+// 50. Desafio do quiz 
+
+function fazerPergunta(pergunta, respostaCorreta) { 
+
+let respostaUsuario = respostaCorreta; // simulação da resposta 
+
+if (respostaUsuario === respostaCorreta) { 
+
+console.log("Resposta correta!"); 
+
+} else { 
+
+console.log("Resposta errada!"); 
+
+} 
+
+} 
+
+fazerPergunta("Qual é a capital do Brasil?", "Brasília"); 
+
+// 61. Lista de nomes 
+
+let nomes = ["Ana", "Bruno", "Carlos", "Daniela", "Eduardo"]; 
+
+for (let i = 0; i < nomes.length; i++) { 
+
+console.log(nomes[i]); 
+
+} 
+
+ 
+
+// 62. Adicionar e remover itens 
+
+let frutas = ["maçã", "banana", "laranja"]; 
+
+console.log("Antes:", frutas); 
+
+frutas.push("abacaxi"); // adiciona no final 
+
+frutas.shift(); // remove o primeiro 
+
+console.log("Depois:", frutas); 
+
+ 
+
+// 63. Contar itens do array 
+
+let cidades = ["Lisboa", "Porto", "Coimbra"]; 
+
+console.log("Total de cidades: " + cidades.length); 
+
+ 
+
+// 64. Somar todos os números 
+
+let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]; 
+
+let soma64 = 0; 
+
+for (let i = 0; i < numeros.length; i++) { 
+
+soma64 += numeros[i]; 
+
+} 
+
+console.log("Soma total: " + soma); 
+
+ 
+
+// 65. Média de notas 
+
+let notas = [7, 8, 6, 9]; 
+
+let somaNotas = 0; 
+
+for (let nota of notas) { 
+
+somaNotas += nota; 
+
+} 
+
+let media65 = somaNotas / notas.length; 
+
+if (media >= 7) { 
+
+console.log("Aprovado com média: " + media65); 
+
+} else { 
+
+console.log("Reprovado com média: " + media65); 
+
+} 
+
+ 
+
+// 66. Mensagens com forEach 
+
+let usuarios = ["Laura", "Rafa", "Tiago"]; 
+
+usuarios.forEach(function(usuario) { 
+
+console.log("Olá, " + usuario + "!"); 
+
+}); 
+
+ 
+
+// 67. Descontos com map 
+
+let precos = [100, 200, 300]; 
+
+let comDesconto = precos.map(function(preco) { 
+
+return preco * 0.9; 
+
+}); 
+
+console.log("Preços com 10% de desconto:", comDesconto); 
+
+ 
+
+// 68. Filtrar maiores de idade 
+
+let idades = [12, 18, 25, 16, 30]; 
+
+let maiores = idades.filter(function(idade) { 
+
+return idade >= 18; 
+
+}); 
+
+console.log("Maiores de idade:", maiores); 
+
+ 
+
+// 69. Carrinho de compras 
+
+let carrinho = [50, 30, 20];
+let total = 0;
+
+for (let preco of carrinho) {
+  total += preco;
+}
+
+let totalComDesconto = total * 0.8;
+
+console.log("Total com desconto de 20%: R$ " + totalComDesconto);
+
+ 
+
+// 70. Lista de tarefas 
+
+let tarefas = ["Estudar", "Lavar a louça", "Ir ao mercado", "Caminhar", "Dormir"];
+let concluida = [false, true, false, true, false];
+
+let tarefasPendentes = tarefas.filter(function(tarefa, index) {
+  return concluida[index] === false;
+});
+
+console.log("Tarefas pendentes:", tarefasPendentes);
+
+// 71. Criando um objeto pessoal 
+
+const pessoa = { 
+
+nome: "João", 
+
+idade: 30, 
+
+profissao: "Desenvolvedor" 
+
+}; 
+
+ 
+
+// 72. Acessando propriedades 
+
+console.log("Nome:", pessoa.nome); 
+
+ 
+
+// 73. Atualizando valores 
+
+pessoa.idade = 31; 
+
+console.log("Nova idade:", pessoa.idade); 
+
+ 
+
+// 74. Adicionando uma nova propriedade 
+
+pessoa.cidade = "São Paulo"; 
+
+console.log("Cidade adicionada:", pessoa.cidade); 
+
+ 
+
+// 75. Função com objeto 
+
+const pessoa = {
+  nome: "João",
+  idade: 30,
+  profissao: "Desenvolvedor"
+};
+
+function apresentarPessoa(p) {
+  return "Olá! Meu nome é " + p.nome +
+         ", tenho " + p.idade +
+         " anos e sou " + p.profissao + ".";
+}
+
+console.log(apresentarPessoa(pessoa));
+
+
+ 
+
+// 76. Lista de pessoas 
+
+const pessoas = [ 
+
+{ nome: "Ana", idade: 17 }, 
+
+{ nome: "Carlos", idade: 22 }, 
+
+{ nome: "Mariana", idade: 15 } 
+
+]; 
+
+ 
+
+// 77. Filtrando maiores de idade 
+
+for (let p of pessoas) { 
+
+if (p.idade >= 18) { 
+
+console.log(`${p.nome} é maior de idade.`); 
+
+} 
+
+} 
+
+ 
+
+// 78. Objeto com método 
+
+const usuario = {
+  nome: "Beatriz",
+  saudacao: function() {
+    console.log("Olá, eu sou " + usuario.nome);
+  }
+};
+
+usuario.saudacao();
+
+
+ 
+
+// 79. Listando propriedades com for...in 
+
+for (let chave in pessoa) { 
+
+console.log(`${chave}: ${pessoa[chave]}`); 
+
+} 
+
+ 
+
+// 80. Cálculo de compra 
+
+const produto = { 
+
+preco: 25, 
+
+quantidade: 4 
+
+}; 
+
+const valorTotal = produto.preco * produto.quantidade; 
+
+console.log(`Valor total da compra: R$${valorTotal}`); 
+
+ 
